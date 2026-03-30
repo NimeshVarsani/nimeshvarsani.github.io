@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CIFAR-10 Image Classification | Nimesh Varsani</title>
+  <meta content="Deep learning research project benchmarking MLP, CNN, and ResNet-18 on CIFAR-10 using PyTorch." name="description">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .ai-hero-banner {
+      background: linear-gradient(135deg, #050d18 0%, #0d2137 55%, #1a3a5c 100%);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 320px;
+      padding: 40px 20px;
+    }
+    .stat-badge {
+      display: inline-block;
+      background: rgba(20, 157, 221, 0.15);
+      border: 1px solid #149ddd;
+      color: #149ddd;
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 13px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      margin: 4px 3px;
+    }
+    .result-card {
+      background: #f5f8fd;
+      border-left: 4px solid #149ddd;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      border-radius: 0 6px 6px 0;
+    }
+    .result-card h6 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: #050d18;
+      margin-bottom: 4px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .result-card p {
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+    .result-card .highlight {
+      color: #149ddd;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Nimesh Varsani</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/NimeshVarsani" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/nimeshvarsani" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://twitter.com/nimesh_varsani" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Project Details</h2>
+          <ol>
+            <li><a href="index.html">Back to Home</a></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+            <div class="ai-hero-banner">
+              <i class="bi bi-cpu-fill" style="font-size:72px; color:#149ddd;"></i>
+              <h4 style="color:#fff; font-family:'Poppins',sans-serif; font-weight:600; margin-top:18px; text-align:center;">CIFAR-10<br>Image Classification</h4>
+              <p style="color:#7ec8e3; font-size:13px; margin-top:8px; text-align:center;">Deep Learning Research &bull; Curtin University</p>
+              <div style="margin-top:16px; text-align:center;">
+                <span class="stat-badge">PyTorch</span>
+                <span class="stat-badge">CNN</span>
+                <span class="stat-badge">ResNet-18</span>
+                <span class="stat-badge">MLP</span>
+                <span class="stat-badge">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="portfolio-info">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: Deep Learning / Computer Vision</li>
+                <li><strong>Institution</strong>: Curtin University, Perth WA</li>
+                <li><strong>Period</strong>: July 2025 &ndash; August 2025</li>
+                <li><strong>Frameworks</strong>: PyTorch, NumPy, Matplotlib</li>
+                <li><strong>Dataset</strong>: CIFAR-10 (60,000 images, 10 classes)</li>
+              </ul>
+            </div>
+
+            <div class="mt-4">
+              <h5 style="font-family:'Poppins',sans-serif; font-weight:700; color:#050d18; margin-bottom:14px;">Key Results</h5>
+
+              <div class="result-card">
+                <h6>Best Model</h6>
+                <p>CNN with BatchNorm achieved <span class="highlight">~82% test accuracy</span> — highest among all three architectures with the best generalisation.</p>
+              </div>
+
+              <div class="result-card">
+                <h6>Training Acceleration</h6>
+                <p>Implemented Alternating Flip &amp; Identity Initialisation, cutting training time by <span class="highlight">~53%</span> (68s &rarr; 32s) with zero accuracy degradation.</p>
+              </div>
+
+              <div class="result-card">
+                <h6>Architectures Compared</h6>
+                <p>MLP (baseline) &bull; CNN with BatchNorm (best accuracy) &bull; ResNet-18 (transfer learning benchmark)</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="portfolio-description">
+          <h2>Deep Learning Research: Image Classification on CIFAR-10</h2>
+          <p>
+            This research project involved designing, implementing, and benchmarking three deep learning architectures — a Multilayer Perceptron (MLP), a Convolutional Neural Network (CNN), and ResNet-18 — on the CIFAR-10 image classification dataset using PyTorch.
+          </p>
+          <p>
+            The primary objective was to evaluate each model's classification performance and generalisation ability while also exploring training efficiency improvements. Regularisation strategies including dropout, weight decay, and data augmentation were applied to mitigate overfitting. The CNN with BatchNormalisation achieved the highest test accuracy of approximately 82%, consistently outperforming both the baseline MLP and ResNet-18 in terms of generalisation on unseen data.
+          </p>
+          <p>
+            A key contribution of the project was the implementation of training acceleration techniques — specifically Alternating Flip and Identity Initialisation — which reduced training time by approximately 53% (from 68 seconds to 32 seconds per epoch) without any degradation in model accuracy. The project culminated in a full experimental report covering data preprocessing, architecture design decisions, hyperparameter tuning, and comparative loss/accuracy visualisations.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
