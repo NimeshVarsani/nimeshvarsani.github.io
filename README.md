@@ -1,4 +1,4 @@
-# Nimesh Varsani — Personal Portfolio
+# Nimesh Varsani — Personal Portfolio --
 
 > AI & ML Engineer | Flutter Developer | Deep Learning Researcher
 > Master of Computing (AI) student at Curtin University, Perth WA
